@@ -1,8 +1,8 @@
 
 Debian
 ====================
-This directory contains files used to package logiscoind/MillenniumPayX-qt
-for Debian-based Linux systems. If you compile logiscoind/MillenniumPayX-qt yourself, there are some useful files here.
+This directory contains files used to package MillenniumPayXd/MillenniumPayX-qt
+for Debian-based Linux systems. If you compile MillenniumPayXd/MillenniumPayX-qt yourself, there are some useful files here.
 
 ## MillenniumPayX: URI support ##
 

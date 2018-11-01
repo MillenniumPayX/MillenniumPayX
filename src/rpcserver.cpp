@@ -594,7 +594,7 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use logiscoind, or the -server option to MillenniumPayX-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use MillenniumPayXd, or the -server option to MillenniumPayX-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
                                                "rpcuser=logiscoinrpc\n"

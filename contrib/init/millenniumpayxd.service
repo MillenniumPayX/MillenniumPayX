@@ -7,13 +7,13 @@ User=MillenniumPayX
 Group=MillenniumPayX
 
 Type=forking
-PIDFile=/var/lib/logiscoind/logiscoind.pid
+PIDFile=/var/lib/MillenniumPayXd/MillenniumPayXd.pid
 
-ExecStart=/usr/bin/logiscoind -daemon -pid=/var/lib/logiscoind/logiscoind.pid \
-          -conf=/etc/MillenniumPayX/MillenniumPayX.conf -datadir=/var/lib/logiscoind
+ExecStart=/usr/bin/MillenniumPayXd -daemon -pid=/var/lib/MillenniumPayXd/MillenniumPayXd.pid \
+          -conf=/etc/MillenniumPayX/MillenniumPayX.conf -datadir=/var/lib/MillenniumPayXd
 
 ExecStop=-/usr/bin/MillenniumPayX-cli -conf=/etc/MillenniumPayX/MillenniumPayX.conf \
-         -datadir=/var/lib/logiscoind stop
+         -datadir=/var/lib/MillenniumPayXd stop
 
 Restart=always
 PrivateTmp=true

@@ -38,12 +38,12 @@ outgoing connections be anonymized, but more is possible.
 An example how to start the client if the Tor proxy is running on local host on
 port 9050 and only allows .onion nodes to connect:
 ```
-./logiscoind -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=dnetzj6l4cvo2fxy.onion:989
+./MillenniumPayXd -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=dnetzj6l4cvo2fxy.onion:989
 ```
 
 In a typical situation, this suffices to run behind a Tor proxy:
 ```
-./logiscoind -proxy=127.0.0.1:9050
+./MillenniumPayXd -proxy=127.0.0.1:9050
 ```
 
 Run a MillenniumPayX hidden server
@@ -69,7 +69,7 @@ NumEntryGuards 8
 ```
 
 The directory can be different of course, but (both) port numbers should be equal to
-your logiscoind's P2P listen port (48484 by default).
+your MillenniumPayXd's P2P listen port (48484 by default).
 ```
 -externalip=X   You can tell MillenniumPayX about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
@@ -92,14 +92,14 @@ your logiscoind's P2P listen port (48484 by default).
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 ```
-./logiscoind -proxy=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:989 -listen
+./MillenniumPayXd -proxy=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:989 -listen
 ```
 
 (obviously, replace the Onion address with your own). If you don't care too much
 about hiding your node, and want to be reachable on IPv4 as well, additionally
 specify:
 ```
-./logiscoind ... -discover
+./MillenniumPayXd ... -discover
 ```
 
 and open port 48484 on your firewall (or use -upnp).
@@ -107,7 +107,7 @@ and open port 48484 on your firewall (or use -upnp).
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 ```
-./logiscoind -onion=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:989 -discover
+./MillenniumPayXd -onion=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:989 -discover
 ```
 
 List of known MillenniumPayX Tor relays

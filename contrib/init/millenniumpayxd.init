@@ -1,31 +1,31 @@
 #!/bin/bash
 #
-#  logiscoind The MillenniumPayX core server.
+#  MillenniumPayXd The MillenniumPayX core server.
 #
 #
 # chkconfig: 345 80 20
-# description: logiscoind
-# processname: logiscoind
+# description: MillenniumPayXd
+# processname: MillenniumPayXd
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/logiscoind, see below
-if [ -f /etc/sysconfig/logiscoind ]; then
-        . /etc/sysconfig/logiscoind
+# you can override defaults in /etc/sysconfig/MillenniumPayXd, see below
+if [ -f /etc/sysconfig/MillenniumPayXd ]; then
+        . /etc/sysconfig/MillenniumPayXd
 fi
 
 RETVAL=0
 
-prog=logiscoind
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/logiscoind
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/logiscoind}
+prog=MillenniumPayXd
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/MillenniumPayXd
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/MillenniumPayXd}
 
-# logiscoind defaults to /usr/bin/logiscoind, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/logiscoind}
+# MillenniumPayXd defaults to /usr/bin/MillenniumPayXd, override with BITCOIND_BIN
+bitcoind=${BITCOIND_BIN-/usr/bin/MillenniumPayXd}
 
-# logiscoind opts default to -disablewallet, override with BITCOIND_OPTS
+# MillenniumPayXd opts default to -disablewallet, override with BITCOIND_OPTS
 bitcoind_opts=${BITCOIND_OPTS}
 
 start() {

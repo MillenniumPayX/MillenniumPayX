@@ -5236,7 +5236,7 @@ https://www.transifex.com/MillenniumPayX-project/MillenniumPayX-project-translat
     </message>
     <message>
         <location line="+4"/>
-        <source>To use logiscoind, or the -server option to MillenniumPayX-qt, you must set an rpcpassword in the configuration file:
+        <source>To use MillenniumPayXd, or the -server option to MillenniumPayX-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
 rpcuser=logiscoinrpc

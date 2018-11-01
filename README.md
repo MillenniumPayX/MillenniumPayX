@@ -2,7 +2,7 @@ MillenniumPayX Core (fork of PIVX) integration/staging repository
 ======================================
 
 
-It is recommended [use the shell script](https://github.com/lgsproject/MPX-install) to install a MillenniumPayX Masternode on a Linux server running Ubuntu 14.04, 16.04, 18.04
+It is recommended [use the shell script](https://github.com/MillenniumPayX/MPX-install) to install a MillenniumPayX Masternode on a Linux server running Ubuntu 14.04, 16.04, 18.04
 
 ***
 
@@ -19,20 +19,20 @@ Installation of libraries (using root user):
 Cloning the repository and compiling (use any user with the sudo group):
 
     cd
-    git clone https://github.com/lgsproject/MillenniumPayX.git
+    git clone https://github.com/MillenniumPayX/MillenniumPayX.git
     cd MillenniumPayX
     ./autogen.sh
     ./configure
     sudo make install
     cd src
-    sudo strip logiscoind
+    sudo strip MillenniumPayXd
     sudo strip MillenniumPayX-cli
     sudo strip MillenniumPayX-tx
     cd ..
 
 Running the daemon:
 
-    logiscoind 
+    MillenniumPayXd
 
 Stopping the daemon:
 
@@ -45,7 +45,7 @@ Demon status:
 
 All binaries for different operating systems, you can download in the releases repository:
 
-https://github.com/lgsproject/MillenniumPayX/releases
+https://github.com/MillenniumPayX/MillenniumPayX/releases
 
 P2P port: 48484, RPC port: 48483
 -

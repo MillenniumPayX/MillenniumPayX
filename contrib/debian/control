@@ -26,7 +26,7 @@ Homepage: http://www.MillenniumPayX.org
 Vcs-Git: git://github.com/MillenniumPayX-Project/MillenniumPayX.git
 Vcs-Browser: http://github.com/MillenniumPayX-Project/MillenniumPayX
 
-Package: logiscoind
+Package: MillenniumPayXd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
@@ -39,7 +39,7 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides the daemon, logiscoind, and the CLI tool
+ This package provides the daemon, MillenniumPayXd, and the CLI tool
  MillenniumPayX-cli to interact with the daemon.
 
 Package: MillenniumPayX-qt

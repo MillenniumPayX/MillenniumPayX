@@ -1,9 +1,9 @@
-# bash programmable completion for logiscoind(1) and MillenniumPayX-cli(1)
+# bash programmable completion for MillenniumPayXd(1) and MillenniumPayX-cli(1)
 # Copyright (c) 2012,2014 Christian von Roques <roques@mti.ag>
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-have logiscoind && {
+have MillenniumPayXd && {
 
 # call $logiscoind for RPC
 _logiscoin_rpc() {
@@ -28,11 +28,11 @@ _logiscoin_accounts() {
 
 _logiscoind() {
     local cur prev words=() cword
-    local logiscoind
+    local MillenniumPayXd
 
-    # save and use original argument to invoke logiscoind
-    # logiscoind might not be in $PATH
-    logiscoind="$1"
+    # save and use original argument to invoke MillenniumPayXd
+    # MillenniumPayXd might not be in $PATH
+    MillenniumPayXd="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -133,7 +133,7 @@ _logiscoind() {
     esac
 }
 
-complete -F _logiscoind logiscoind MillenniumPayX-cli
+complete -F _logiscoind MillenniumPayXd MillenniumPayX-cli
 }
 
 # Local variables:

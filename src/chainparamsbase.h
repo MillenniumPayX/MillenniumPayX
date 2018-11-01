@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between MillenniumPayX-cli and logiscoind)
+ * CBaseChainParams defines the base parameters (shared between MillenniumPayX-cli and MillenniumPayXd)
  * of a given instance of the MillenniumPayX system.
  */
 class CBaseChainParams

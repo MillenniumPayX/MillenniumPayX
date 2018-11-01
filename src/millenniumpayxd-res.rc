@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "MillenniumPayX"
-            VALUE "FileDescription",    "logiscoind (OSS daemon/client for MillenniumPayX)"
+            VALUE "FileDescription",    "MillenniumPayXd (OSS daemon/client for MillenniumPayX)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "logiscoind"
+            VALUE "InternalName",       "MillenniumPayXd"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "logiscoind.exe"
-            VALUE "ProductName",        "logiscoind"
+            VALUE "OriginalFilename",   "MillenniumPayXd.exe"
+            VALUE "ProductName",        "MillenniumPayXd"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

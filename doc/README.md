@@ -13,8 +13,8 @@ The following are some helpful notes on how to run MillenniumPayX on your native
 
 Unpack the files into a directory and run:
 
-- bin/32/MillenniumPayX-qt (GUI, 32-bit) or bin/32/logiscoind (headless, 32-bit)
-- bin/64/MillenniumPayX-qt (GUI, 64-bit) or bin/64/logiscoind (headless, 64-bit)
+- bin/32/MillenniumPayX-qt (GUI, 32-bit) or bin/32/MillenniumPayXd (headless, 32-bit)
+- bin/64/MillenniumPayX-qt (GUI, 64-bit) or bin/64/MillenniumPayXd (headless, 64-bit)
 
 ### Windows
 
