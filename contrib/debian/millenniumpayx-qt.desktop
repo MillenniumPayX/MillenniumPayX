@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=MillenniumPayX
+Comment=MillenniumPayX P2P Cryptocurrency
+Comment[fr]=MillenniumPayX, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=MillenniumPayX, eşten eşe kriptografik sanal para birimi
+Exec=MillenniumPayX-qt %u
+Terminal=false
+Type=Application
+Icon=logiscoin128
+MimeType=x-scheme-handler/MillenniumPayX;
+Categories=Office;Finance;
