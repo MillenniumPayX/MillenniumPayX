@@ -177,7 +177,7 @@
     </message>
     <message>
         <source>MillenniumPayX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LGSs from being stolen by malware infecting your computer.</source>
-        <translation>LogisCoin는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 LGSs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <translation>MillenniumPayX는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 LGSs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -631,7 +631,7 @@
     </message>
     <message>
         <source>Modify configuration options for MillenniumPayX</source>
-        <translation>LogisCoin에 대한 구성 옵션 수정</translation>
+        <translation>MillenniumPayX에 대한 구성 옵션 수정</translation>
     </message>
     <message>
         <source>Sign messages with your MillenniumPayX addresses to prove you own them</source>
@@ -1577,15 +1577,15 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening MillenniumPayX's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 2 rounds) LogisCoin의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 2 rounds) MillenniumPayX의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
     </message>
     <message>
         <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening MillenniumPayX's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 8 rounds) LogisCoin의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 8 rounds) MillenniumPayX의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
     </message>
     <message>
         <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening MillenniumPayX's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 16 rounds) LogisCoin의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 16 rounds) MillenniumPayX의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
     </message>
 </context>
 <context>
@@ -1667,7 +1667,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Automatically start MillenniumPayX after logging in to the system.</source>
-        <translation>시스템 로그인 후 LogisCoin을 자동으로 시작합니다.</translation>
+        <translation>시스템 로그인 후 MillenniumPayX을 자동으로 시작합니다.</translation>
     </message>
     <message>
         <source>&amp;Start MillenniumPayX on system login</source>
@@ -1715,7 +1715,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting MillenniumPayX.</source>
-        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 LogisCoin을 다시 시작한 후에 적용됩니다.</translation>
+        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 MillenniumPayX을 다시 시작한 후에 적용됩니다.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -2093,7 +2093,7 @@ https://www.transifex.com/MillenniumPayX-project/MillenniumPayX-project-translat
     </message>
     <message>
         <source>Cannot start MillenniumPayX: click-to-pay handler</source>
-        <translation>LogisCoin을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
+        <translation>MillenniumPayX을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid MillenniumPayX address or malformed URI parameters.</source>
@@ -3941,7 +3941,7 @@ https://www.transifex.com/MillenniumPayX-project/MillenniumPayX-project-translat
     </message>
     <message>
         <source>Disable all MillenniumPayX specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>LogisCoin의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
+        <translation>MillenniumPayX의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -4095,7 +4095,7 @@ https://www.transifex.com/MillenniumPayX-project/MillenniumPayX-project-translat
         <source>To use MillenniumPayXd, or the -server option to MillenniumPayX-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=logiscoinrpc
+rpcuser=MillenniumPayXrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4106,7 +4106,7 @@ for example: alertnotify=echo %%s | mail -s "MillenniumPayX Alert" admin@foo.com
         <translation>MillenniumPayXd 또는 MillenniumPayX-qt에 대한 -server 옵션 파일을 사용하려면 configuration 파일에서 rpcpassword를 설정해야 합니다:
 %s
 다음 무작위 암호를 사용하는 것을 추천합니다:
-rpcuser=LogisCoinpc
+rpcuser=MillenniumPayXpc
 rpcpassword=%s
 (이 비밀번호는 기억할 필요가 없습니다)
 유저 이름과 비밀번호는 반드시 달라야 합니다.

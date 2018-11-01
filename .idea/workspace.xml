@@ -22,29 +22,41 @@
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="am" value="1" />
           <entry key="cpp" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="ObjectiveC" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/activemasternode.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
-              <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+              <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Makefile.am">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -56,19 +68,28 @@
       <find>LogisCoin</find>
       <find>LGS</find>
       <find>port</find>
-      <find>logiscoind</find>
       <find>millenniumpayxd</find>
+      <find>MillenniumPayXd</find>
+      <find>logiscoind</find>
+      <find>logiscoin</find>
     </findStrings>
     <replaceStrings>
-      <replace>MillenniumPayX</replace>
       <replace>MPX</replace>
       <replace />
       <replace>millenniumpayxd</replace>
       <replace>MillenniumPayXd</replace>
+      <replace>MillenniumPayX</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Makefile.am" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -77,8 +98,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="234" />
-    <option name="y" value="294" />
+    <option name="x" value="392" />
+    <option name="y" value="315" />
     <option name="width" value="1663" />
     <option name="height" value="1296" />
   </component>
@@ -95,11 +116,6 @@
             <path>
               <item name="MillenniumPayX" type="b2602c69:ProjectViewProjectNode" />
               <item name="MillenniumPayX" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MillenniumPayX" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MillenniumPayX" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -137,16 +153,18 @@
       <updated>1541043244474</updated>
       <workItem from="1541043246423" duration="175000" />
       <workItem from="1541043642096" duration="115000" />
+      <workItem from="1541044914551" duration="74000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290000" />
+    <option name="totallyTimeSpent" value="364000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="234" y="294" width="1663" height="1296" extended-state="0" />
+    <frame x="291" y="300" width="1663" height="1296" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25393826" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2583491" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -190,7 +208,14 @@
     <entry file="file://$PROJECT_DIR$/src/activemasternode.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
-          <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile.am">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
         </state>
       </provider>
     </entry>

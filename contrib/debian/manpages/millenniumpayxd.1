@@ -84,10 +84,10 @@ This help message
 \fBbackupwallet 'destination'\fR
 Safely copies *wallet.dat* to 'destination', which can be a directory or a path with filename.
 .TP
-\fBgetaccount 'logiscoinaddress'\fR
+\fBgetaccount 'MillenniumPayXaddress'\fR
 Returns the account associated with the given address.
 .TP
-\fBsetaccount 'logiscoinaddress' ['account']\fR
+\fBsetaccount 'MillenniumPayXaddress' ['account']\fR
 Sets the ['account'] associated with the given address. ['account'] may be omitted to remove an address from ['account'].
 .TP
 \fBgetaccountaddress 'account'\fR
@@ -129,8 +129,8 @@ Returns a new MillenniumPayX address for receiving payments. If 'account' is spe
 \fBgetreceivedbyaccount 'account' ['minconf=1']\fR
 Returns the total amount received by addresses associated with 'account' in transactions with at least ['minconf'] confirmations.
 .TP
-\fBgetreceivedbyaddress 'logiscoinaddress' ['minconf=1']\fR
-Returns the total amount received by 'logiscoinaddress' in transactions with at least ['minconf'] confirmations.
+\fBgetreceivedbyaddress 'MillenniumPayXaddress' ['minconf=1']\fR
+Returns the total amount received by 'MillenniumPayXaddress' in transactions with at least ['minconf'] confirmations.
 .TP
 \fBgettransaction 'txid'\fR
 Returns information about a specific transaction, given hexadecimal transaction ID.
@@ -182,21 +182,21 @@ Returns a list of the last ['count'] transactions for 'account' \- for all accou
 \fBmove <'fromaccount'> <'toaccount'> <'amount'> ['minconf=1'] ['comment']\fR
 Moves funds between accounts.
 .TP
-\fBsendfrom* <'account'> <'logiscoinaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
-Sends amount from account's balance to 'logiscoinaddress'. This method will fail if there is less than amount MPX with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
+\fBsendfrom* <'account'> <'MillenniumPayXaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
+Sends amount from account's balance to 'MillenniumPayXaddress'. This method will fail if there is less than amount MPX with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
 .TP
-\fBsendtoaddress 'logiscoinaddress' 'amount' ['comment'] ['comment-to']\fR
-Sends amount from the server's available balance to 'logiscoinaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
+\fBsendtoaddress 'MillenniumPayXaddress' 'amount' ['comment'] ['comment-to']\fR
+Sends amount from the server's available balance to 'MillenniumPayXaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
 .TP
 \fBstop\fR
 Stops the MillenniumPayX server.
 .TP
-\fBvalidateaddress 'logiscoinaddress'\fR
-Checks that 'logiscoinaddress' looks like a proper MillenniumPayX address. Returns an object containing:
+\fBvalidateaddress 'MillenniumPayXaddress'\fR
+Checks that 'MillenniumPayXaddress' looks like a proper MillenniumPayX address. Returns an object containing:
 
     "isvalid" : true or false.
     "ismine"  : true if the address is in the server's wallet.
-    "address" : logiscoinaddress.
+    "address" : MillenniumPayXaddress.
 
     *note: ismine and address are only returned if the address is valid.
 

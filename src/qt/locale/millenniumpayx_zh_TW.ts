@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>選擇要匯出LogisCoin幣的位址</translation>
+        <translation>選擇要匯出MillenniumPayX幣的位址</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>選擇要接收LogisCoin幣的位址</translation>
+        <translation>選擇要接收MillenniumPayX幣的位址</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -651,7 +651,7 @@
     </message>
     <message>
         <source>Open a MillenniumPayX: URI or payment request</source>
-        <translation>打開LogisCoin: 位址或付款請求 </translation>
+        <translation>打開MillenniumPayX: 位址或付款請求 </translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>

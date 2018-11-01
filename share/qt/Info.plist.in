@@ -40,7 +40,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.MillenniumPayX.LogiscoinPayment</string>
+      <string>io.MillenniumPayX.MillenniumPayXPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>MillenniumPayX</string>
@@ -65,7 +65,7 @@
         <string>application/x-MillenniumPayX-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>logiscoinpaymentrequest</string>
+          <string>MillenniumPayXpaymentrequest</string>
         </array>
       </dict>
     </dict>

@@ -14,8 +14,8 @@ To install:
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your logiscoinqt binary to `/usr/bin`
-and the `../../share/pixmaps/logiscoin128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your MillenniumPayXqt binary to `/usr/bin`
+and the `../../share/pixmaps/MillenniumPayX128.png` to `/usr/share/pixmaps`
 
 MillenniumPayX-qt.protocol (KDE)
 

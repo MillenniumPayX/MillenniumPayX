@@ -4086,7 +4086,7 @@ https://www.transifex.com/MillenniumPayX-project/MillenniumPayX-project-translat
         <source>To use MillenniumPayXd, or the -server option to MillenniumPayX-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=logiscoinrpc
+rpcuser=MillenniumPayXrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

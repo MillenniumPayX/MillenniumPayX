@@ -4990,7 +4990,7 @@ https://www.transifex.com/MillenniumPayX-project/MillenniumPayX-project-translat
 <context>
     <name>MillenniumPayX-core</name>
     <message>
-        <location filename="../logiscoinstrings.cpp" line="+12"/>
+        <location filename="../MillenniumPayXstrings.cpp" line="+12"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -5239,7 +5239,7 @@ https://www.transifex.com/MillenniumPayX-project/MillenniumPayX-project-translat
         <source>To use MillenniumPayXd, or the -server option to MillenniumPayX-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=logiscoinrpc
+rpcuser=MillenniumPayXrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

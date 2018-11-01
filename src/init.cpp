@@ -464,7 +464,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageGroup(_("Obfuscation options:"));
     strUsage += HelpMessageOpt("-enableobfuscation=<n>", strprintf(_("Enable use of automated obfuscation for funds stored in this wallet (0-1, default: %u)"), 0));
     strUsage += HelpMessageOpt("-obfuscationrounds=<n>", strprintf(_("Use N separate masternodes to anonymize funds  (2-8, default: %u)"), 2));
-    strUsage += HelpMessageOpt("-anonymizelogiscoinamount=<n>", strprintf(_("Keep N MPX anonymized (default: %u)"), 0));
+    strUsage += HelpMessageOpt("-anonymizeMillenniumPayXamount=<n>", strprintf(_("Keep N MPX anonymized (default: %u)"), 0));
     strUsage += HelpMessageOpt("-liquidityprovider=<n>", strprintf(_("Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)"), 0));
 
     strUsage += HelpMessageGroup(_("SwiftTX options:"));
@@ -1573,9 +1573,9 @@ bool AppInit2(boost::thread_group& threadGroup)
         nObfuscationRounds = 99999;
     }
 
-    nAnonymizeLogiscoinAmount = GetArg("-anonymizelogiscoinamount", 0);
-    if (nAnonymizeLogiscoinAmount > 999999) nAnonymizeLogiscoinAmount = 999999;
-    if (nAnonymizeLogiscoinAmount < 2) nAnonymizeLogiscoinAmount = 2;
+    nAnonymizeMillenniumPayXAmount = GetArg("-anonymizeMillenniumPayXamount", 0);
+    if (nAnonymizeMillenniumPayXAmount > 999999) nAnonymizeMillenniumPayXAmount = 999999;
+    if (nAnonymizeMillenniumPayXAmount < 2) nAnonymizeMillenniumPayXAmount = 2;
 
     fEnableSwiftTX = GetBoolArg("-enableswifttx", fEnableSwiftTX);
     nSwiftTXDepth = GetArg("-swifttxdepth", nSwiftTXDepth);
@@ -1590,7 +1590,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     LogPrintf("fLiteMode %d\n", fLiteMode);
     LogPrintf("nSwiftTXDepth %d\n", nSwiftTXDepth);
     LogPrintf("Obfuscation rounds %d\n", nObfuscationRounds);
-    LogPrintf("Anonymize MillenniumPayX Amount %d\n", nAnonymizeLogiscoinAmount);
+    LogPrintf("Anonymize MillenniumPayX Amount %d\n", nAnonymizeMillenniumPayXAmount);
     LogPrintf("Budget Mode %s\n", strBudgetMode.c_str());
 
     /* Denominations

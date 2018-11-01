@@ -3,30 +3,30 @@ EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
 # MillenniumPayX qt core #
 QT_TS = \
-  qt/locale/logiscoin_bg.ts \
-  qt/locale/logiscoin_ca.ts \
-  qt/locale/logiscoin_cs.ts \
-  qt/locale/logiscoin_da.ts \
-  qt/locale/logiscoin_de.ts \
-  qt/locale/logiscoin_en.ts \
-  qt/locale/logiscoin_en_US.ts \
-  qt/locale/logiscoin_es.ts \
-  qt/locale/logiscoin_fi.ts \
-  qt/locale/logiscoin_fr_FR.ts \
-  qt/locale/logiscoin_it.ts \
-  qt/locale/logiscoin_ja.ts \
-  qt/locale/logiscoin_ko_KR.ts \
-  qt/locale/logiscoin_nl.ts \
-  qt/locale/logiscoin_pl.ts \
-  qt/locale/logiscoin_pt.ts \
-  qt/locale/logiscoin_pt_BR.ts \
-  qt/locale/logiscoin_ro_RO.ts \
-  qt/locale/logiscoin_ru.ts \
-  qt/locale/logiscoin_sk.ts \
-  qt/locale/logiscoin_sv.ts \
-  qt/locale/logiscoin_uk.ts \
-  qt/locale/logiscoin_zh_CN.ts \
-  qt/locale/logiscoin_zh_TW.ts
+  qt/locale/MillenniumPayX_bg.ts \
+  qt/locale/MillenniumPayX_ca.ts \
+  qt/locale/MillenniumPayX_cs.ts \
+  qt/locale/MillenniumPayX_da.ts \
+  qt/locale/MillenniumPayX_de.ts \
+  qt/locale/MillenniumPayX_en.ts \
+  qt/locale/MillenniumPayX_en_US.ts \
+  qt/locale/MillenniumPayX_es.ts \
+  qt/locale/MillenniumPayX_fi.ts \
+  qt/locale/MillenniumPayX_fr_FR.ts \
+  qt/locale/MillenniumPayX_it.ts \
+  qt/locale/MillenniumPayX_ja.ts \
+  qt/locale/MillenniumPayX_ko_KR.ts \
+  qt/locale/MillenniumPayX_nl.ts \
+  qt/locale/MillenniumPayX_pl.ts \
+  qt/locale/MillenniumPayX_pt.ts \
+  qt/locale/MillenniumPayX_pt_BR.ts \
+  qt/locale/MillenniumPayX_ro_RO.ts \
+  qt/locale/MillenniumPayX_ru.ts \
+  qt/locale/MillenniumPayX_sk.ts \
+  qt/locale/MillenniumPayX_sv.ts \
+  qt/locale/MillenniumPayX_uk.ts \
+  qt/locale/MillenniumPayX_zh_CN.ts \
+  qt/locale/MillenniumPayX_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -112,10 +112,10 @@ QT_MOC = \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_logiscoin.cpp
+QT_QRC_CPP = qt/qrc_MillenniumPayX.cpp
 QT_QRC = qt/MillenniumPayX.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_logiscoin_locale.cpp
-QT_QRC_LOCALE = qt/logiscoin_locale.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_MillenniumPayX_locale.cpp
+QT_QRC_LOCALE = qt/MillenniumPayX_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -229,12 +229,12 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
-  qt/res/icons/unit_logiscoin.png \
-  qt/res/icons/unit_mlogiscoin.png \
-  qt/res/icons/unit_ulogiscoin.png \
-  qt/res/icons/unit_tlogiscoin.png \
-  qt/res/icons/unit_tmlogiscoin.png \
-  qt/res/icons/unit_tulogiscoin.png
+  qt/res/icons/unit_MillenniumPayX.png \
+  qt/res/icons/unit_mMillenniumPayX.png \
+  qt/res/icons/unit_uMillenniumPayX.png \
+  qt/res/icons/unit_tMillenniumPayX.png \
+  qt/res/icons/unit_tmMillenniumPayX.png \
+  qt/res/icons/unit_tuMillenniumPayX.png
 
 BITCOIN_QT_CPP = \
   qt/bitcoinaddressvalidator.cpp \
@@ -301,7 +301,7 @@ RES_IMAGES = \
   qt/res/images/about.png \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
-  qt/res/images/logiscoin_logo_horizontal.png \
+  qt/res/images/MillenniumPayX_logo_horizontal.png \
   qt/res/images/downArrow.png \
   qt/res/images/downArrow_small.png \
   qt/res/images/upArrow_small.png \
@@ -337,7 +337,7 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_logiscoin_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_MillenniumPayX_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
@@ -345,45 +345,45 @@ $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
 # MillenniumPayX-qt binary #
-qt_logiscoin_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+qt_MillenniumPayX_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_logiscoin_qt_SOURCES = qt/MillenniumPayX.cpp
+qt_MillenniumPayX_qt_SOURCES = qt/MillenniumPayX.cpp
 if TARGET_DARWIN
-  qt_logiscoin_qt_SOURCES += $(BITCOIN_MM)
+  qt_MillenniumPayX_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_logiscoin_qt_SOURCES += $(BITCOIN_RC)
+  qt_MillenniumPayX_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_logiscoin_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_MillenniumPayX_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_logiscoin_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_MillenniumPayX_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_logiscoin_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_MillenniumPayX_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_logiscoin_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
+qt_MillenniumPayX_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1)
-qt_logiscoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_logiscoin_qt_LIBTOOLFLAGS = --tag CXX
+qt_MillenniumPayX_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_MillenniumPayX_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 .SECONDARY: $(QT_QM)
 
-qt/logiscoinstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
+qt/MillenniumPayXstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: qt/logiscoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: qt/MillenniumPayXstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/logiscoin_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/MillenniumPayX_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@test -f $(@D)/$(<F) || cp -f $< $(@D)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name logiscoin_locale $(@D)/$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name MillenniumPayX_locale $(@D)/$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
@@ -395,10 +395,10 @@ CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda 
 
 CLEANFILES += $(CLEAN_QT)
 
-logiscoin_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_logiscoin_qt_OBJECTS) qt/MillenniumPayX-qt$(EXEEXT) $(LIBBITCOINQT)
+MillenniumPayX_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_MillenniumPayX_qt_OBJECTS) qt/MillenniumPayX-qt$(EXEEXT) $(LIBBITCOINQT)
 
-logiscoin_qt : qt/MillenniumPayX-qt$(EXEEXT)
+MillenniumPayX_qt : qt/MillenniumPayX-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

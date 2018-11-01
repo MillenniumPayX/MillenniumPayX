@@ -7,6 +7,6 @@ Comment[tr]=MillenniumPayX, eşten eşe kriptografik sanal para birimi
 Exec=MillenniumPayX-qt %u
 Terminal=false
 Type=Application
-Icon=logiscoin128
+Icon=MillenniumPayX128
 MimeType=x-scheme-handler/MillenniumPayX;
 Categories=Office;Finance;

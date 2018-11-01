@@ -44,9 +44,9 @@ QString BitcoinUnits::id(int unit)
     case MPX:
         return QString("MillenniumPayX");
     case mLGS:
-        return QString("mlogiscoin");
+        return QString("mMillenniumPayX");
     case uLGS:
-        return QString::fromUtf8("ulogiscoin");
+        return QString::fromUtf8("uMillenniumPayX");
     default:
         return QString("???");
     }

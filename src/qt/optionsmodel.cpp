@@ -76,11 +76,11 @@ void OptionsModel::Init()
     if (!settings.contains("nObfuscationRounds"))
         settings.setValue("nObfuscationRounds", 2);
 
-    if (!settings.contains("nAnonymizeLogiscoinAmount"))
-        settings.setValue("nAnonymizeLogiscoinAmount", 1000);
+    if (!settings.contains("nAnonymizeMillenniumPayXAmount"))
+        settings.setValue("nAnonymizeMillenniumPayXAmount", 1000);
 
     nObfuscationRounds = settings.value("nObfuscationRounds").toLongLong();
-    nAnonymizeLogiscoinAmount = settings.value("nAnonymizeLogiscoinAmount").toLongLong();
+    nAnonymizeMillenniumPayXAmount = settings.value("nAnonymizeMillenniumPayXAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -147,8 +147,8 @@ void OptionsModel::Init()
 
     if (settings.contains("nObfuscationRounds"))
         SoftSetArg("-obfuscationrounds", settings.value("nObfuscationRounds").toString().toStdString());
-    if (settings.contains("nAnonymizeLogiscoinAmount"))
-        SoftSetArg("-anonymizelogiscoinamount", settings.value("nAnonymizeLogiscoinAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeMillenniumPayXAmount"))
+        SoftSetArg("-anonymizeMillenniumPayXamount", settings.value("nAnonymizeMillenniumPayXAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -228,8 +228,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return settings.value("nThreadsScriptVerif");
         case ObfuscationRounds:
             return QVariant(nObfuscationRounds);
-        case AnonymizeLogiscoinAmount:
-            return QVariant(nAnonymizeLogiscoinAmount);
+        case AnonymizeMillenniumPayXAmount:
+            return QVariant(nAnonymizeMillenniumPayXAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -338,10 +338,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             settings.setValue("nObfuscationRounds", nObfuscationRounds);
             emit obfuscationRoundsChanged(nObfuscationRounds);
             break;
-        case AnonymizeLogiscoinAmount:
-            nAnonymizeLogiscoinAmount = value.toInt();
-            settings.setValue("nAnonymizeLogiscoinAmount", nAnonymizeLogiscoinAmount);
-            emit anonymizeLogiscoinAmountChanged(nAnonymizeLogiscoinAmount);
+        case AnonymizeMillenniumPayXAmount:
+            nAnonymizeMillenniumPayXAmount = value.toInt();
+            settings.setValue("nAnonymizeMillenniumPayXAmount", nAnonymizeMillenniumPayXAmount);
+            emit anonymizeMillenniumPayXAmountChanged(nAnonymizeMillenniumPayXAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

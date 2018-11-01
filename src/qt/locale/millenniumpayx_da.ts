@@ -4037,7 +4037,7 @@ https://www.transifex.com/MillenniumPayX-project/MillenniumPayX-project-translat
         <source>To use MillenniumPayXd, or the -server option to MillenniumPayX-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=logiscoinrpc
+rpcuser=MillenniumPayXrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4048,7 +4048,7 @@ for example: alertnotify=echo %%s | mail -s "MillenniumPayX Alert" admin@foo.com
         <translation>For at bruge MillenniumPayXd eller -server muligheden sammen med MillenniumPayX-qt skal der angives et rpc kodeord i konfigurationsfilen:
 %s
 De anbefales at benytte følgende tilfældige kodeord
-Rpcuser=logiscoinrpc
+Rpcuser=MillenniumPayXrpc
 rpcpasswrd=%s
 (Det er ikke nødvendigt at huske dette kodeord)
 Brugernavn og kodeord MÅ IKKE VÆRE ENS!

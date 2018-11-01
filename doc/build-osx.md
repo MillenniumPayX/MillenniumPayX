@@ -104,7 +104,7 @@ directory. We have to first create the RPC configuration file, though.
 Run `./MillenniumPayXd` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=logiscoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/MillenniumPayX/MillenniumPayX.conf"
+    echo -e "rpcuser=MillenniumPayXrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/MillenniumPayX/MillenniumPayX.conf"
     chmod 600 "/Users/${USER}/Library/Application Support/MillenniumPayX/MillenniumPayX.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't

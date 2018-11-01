@@ -213,7 +213,7 @@ void OptionsDialog::setMapper()
 
     /* Obfuscation Rounds */
     mapper->addMapping(ui->obfuscationRounds, OptionsModel::ObfuscationRounds);
-    mapper->addMapping(ui->anonymizeLogiscoin, OptionsModel::AnonymizeLogiscoinAmount);
+    mapper->addMapping(ui->anonymizeMillenniumPayX, OptionsModel::AnonymizeMillenniumPayXAmount);
     mapper->addMapping(ui->showMasternodesTab, OptionsModel::ShowMasternodesTab);
 }
 

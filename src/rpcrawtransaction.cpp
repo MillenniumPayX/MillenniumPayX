@@ -154,7 +154,7 @@ Value getrawtransaction(const Array& params, bool fHelp)
             "         \"reqSigs\" : n,            (numeric) The required sigs\n"
             "         \"type\" : \"pubkeyhash\",  (string) The type, eg 'pubkeyhash'\n"
             "         \"addresses\" : [           (json array of string)\n"
-            "           \"logiscoinaddress\"        (string) MillenniumPayX address\n"
+            "           \"MillenniumPayXaddress\"        (string) MillenniumPayX address\n"
             "           ,...\n"
             "         ]\n"
             "       }\n"

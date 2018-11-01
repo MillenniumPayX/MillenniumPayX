@@ -472,7 +472,7 @@ SOURCES += src/activemasternode.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
            src/qt/MillenniumPayX.cpp \
-           src/qt/logiscoinstrings.cpp \
+           src/qt/MillenniumPayXstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -550,7 +550,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_logiscoin.cpp \
+           src/test/test_MillenniumPayX.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -641,21 +641,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/MillenniumPayX.qrc src/qt/logiscoin_locale.qrc
+RESOURCES += src/qt/MillenniumPayX.qrc src/qt/MillenniumPayX_locale.qrc
 
-TRANSLATIONS += src/qt/locale/logiscoin_bg.ts \
-                src/qt/locale/logiscoin_de.ts \
-                src/qt/locale/logiscoin_en.ts \
-                src/qt/locale/logiscoin_es.ts \
-                src/qt/locale/logiscoin_fi.ts \
-                src/qt/locale/logiscoin_fr.ts \
-                src/qt/locale/logiscoin_it.ts \
-                src/qt/locale/logiscoin_ja.ts \
-                src/qt/locale/logiscoin_pl.ts \
-                src/qt/locale/logiscoin_pt.ts \
-                src/qt/locale/logiscoin_ru.ts \
-                src/qt/locale/logiscoin_sk.ts \
-                src/qt/locale/logiscoin_sv.ts \
-                src/qt/locale/logiscoin_vi.ts \
-                src/qt/locale/logiscoin_zh_CN.ts \
-                src/qt/locale/logiscoin_zh_TW.ts
+TRANSLATIONS += src/qt/locale/MillenniumPayX_bg.ts \
+                src/qt/locale/MillenniumPayX_de.ts \
+                src/qt/locale/MillenniumPayX_en.ts \
+                src/qt/locale/MillenniumPayX_es.ts \
+                src/qt/locale/MillenniumPayX_fi.ts \
+                src/qt/locale/MillenniumPayX_fr.ts \
+                src/qt/locale/MillenniumPayX_it.ts \
+                src/qt/locale/MillenniumPayX_ja.ts \
+                src/qt/locale/MillenniumPayX_pl.ts \
+                src/qt/locale/MillenniumPayX_pt.ts \
+                src/qt/locale/MillenniumPayX_ru.ts \
+                src/qt/locale/MillenniumPayX_sk.ts \
+                src/qt/locale/MillenniumPayX_sv.ts \
+                src/qt/locale/MillenniumPayX_vi.ts \
+                src/qt/locale/MillenniumPayX_zh_CN.ts \
+                src/qt/locale/MillenniumPayX_zh_TW.ts

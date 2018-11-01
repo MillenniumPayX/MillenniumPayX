@@ -37,12 +37,12 @@
         <file alias="tx_input">res/icons/tx_input.png</file>
         <file alias="tx_output">res/icons/tx_output.png</file>
         <file alias="tx_inout">res/icons/tx_inout.png</file>
-        <file alias="unit_logiscoin">res/icons/unit_logiscoin.png</file>
-        <file alias="unit_mlogiscoin">res/icons/unit_mlogiscoin.png</file>
-        <file alias="unit_ulogiscoin">res/icons/unit_ulogiscoin.png</file>
-        <file alias="unit_tlogiscoin">res/icons/unit_tlogiscoin.png</file>
-        <file alias="unit_tmlogiscoin">res/icons/unit_tmlogiscoin.png</file>
-        <file alias="unit_tulogiscoin">res/icons/unit_tulogiscoin.png</file>
+        <file alias="unit_MillenniumPayX">res/icons/unit_MillenniumPayX.png</file>
+        <file alias="unit_mMillenniumPayX">res/icons/unit_mMillenniumPayX.png</file>
+        <file alias="unit_uMillenniumPayX">res/icons/unit_uMillenniumPayX.png</file>
+        <file alias="unit_tMillenniumPayX">res/icons/unit_tMillenniumPayX.png</file>
+        <file alias="unit_tmMillenniumPayX">res/icons/unit_tmMillenniumPayX.png</file>
+        <file alias="unit_tuMillenniumPayX">res/icons/unit_tuMillenniumPayX.png</file>
         <file alias="lock_closed">res/icons/lock_closed.png</file>
         <file alias="lock_open">res/icons/lock_open.png</file>
         <file alias="key">res/icons/key.png</file>
@@ -58,7 +58,7 @@
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
-        <file alias="logiscoin_logo_horizontal">res/images/logiscoin_logo_horizontal.png</file>
+        <file alias="MillenniumPayX_logo_horizontal">res/images/MillenniumPayX_logo_horizontal.png</file>
         <file alias="downArrow">res/images/downArrow.png</file>
         <file alias="downArrow_small">res/images/downArrow_small.png</file>
         <file alias="upArrow_small">res/images/upArrow_small.png</file>

@@ -137,7 +137,7 @@ I usually confirm that remote is on the correct block by issuing:
 
 ```MillenniumPayXd getinfo```
 
-And compare with the official explorer at http://logiscoinexplorer.coin-server.com <or> dnet.presstab.pw
+And compare with the official explorer at http://MillenniumPayXexplorer.coin-server.com <or> dnet.presstab.pw
 
 ### Local
 

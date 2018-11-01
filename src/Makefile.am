@@ -371,7 +371,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-logiscoind_LDADD = \
+MillenniumPayXd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -382,40 +382,40 @@ logiscoind_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-logiscoind_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+MillenniumPayXd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-logiscoind_LDADD += libbitcoin_wallet.a
+MillenniumPayXd_LDADD += libbitcoin_wallet.a
 endif
-logiscoind_SOURCES = MillenniumPayXd.cpp
+MillenniumPayXd_SOURCES = MillenniumPayXd.cpp
 #
 
 if TARGET_WINDOWS
-logiscoind_SOURCES += MillenniumPayXd-res.rc
+MillenniumPayXd_SOURCES += MillenniumPayXd-res.rc
 endif
 
-logiscoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
-logiscoind_CPPFLAGS = $(BITCOIN_INCLUDES)
-logiscoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+MillenniumPayXd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+MillenniumPayXd_CPPFLAGS = $(BITCOIN_INCLUDES)
+MillenniumPayXd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
 # MillenniumPayX-cli binary #
-logiscoin_cli_LDADD = \
+MillenniumPayX_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
   $(SSL_LIBS) \
   $(CRYPTO_LIBS)
 
-logiscoin_cli_SOURCES = \
+MillenniumPayX_cli_SOURCES = \
   MillenniumPayX-cli.cpp
 
-logiscoin_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
+MillenniumPayX_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 
 # MillenniumPayX-tx binary #
-logiscoin_tx_LDADD = \
+MillenniumPayX_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -424,15 +424,15 @@ logiscoin_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-logiscoin_tx_SOURCES = MillenniumPayX-tx.cpp
-logiscoin_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+MillenniumPayX_tx_SOURCES = MillenniumPayX-tx.cpp
+MillenniumPayX_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-logiscoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+MillenniumPayX_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-logiscoin_cli_SOURCES += MillenniumPayX-cli-res.rc
+MillenniumPayX_cli_SOURCES += MillenniumPayX-cli-res.rc
 endif
-logiscoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+MillenniumPayX_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h
